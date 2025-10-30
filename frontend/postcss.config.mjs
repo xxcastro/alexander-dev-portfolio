@@ -1,7 +1,8 @@
-const config = {
+// frontend/postcss.config.mjs
+export default {
   plugins: {
-    "@tailwindcss/postcss": {},
+    // CAMBIO CLAVE: Usa el paquete @tailwindcss/postcss en lugar del 'tailwindcss' directo
+    '@tailwindcss/postcss': {}, 
+    autoprefixer: {},
   },
 };
-
-export default config;

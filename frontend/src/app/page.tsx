@@ -1,24 +1,32 @@
-// frontend/app/page.tsx
+// frontend/src/app/page.tsx
 
 import Header from '../../components/Header'; // Asegúrate que la ruta de importación sea correcta
-//import Hero from '../../components/Hero';
+import Hero from '../../components/Hero';
 //import About from '../../components/About';
 //import ProjectsList from '../../components/ProjectsList';
-//import ContactForm from '../../components/ContactForm';
+import ContactForm from '../../components/ContactForm';
 
 
 export default function Home() {
   return (
-    <main>
+    
+    <div>
+      <Header />
       {/* El componente Header suele estar fuera del 'main' o dentro de un 'Layout'
         pero para empezar, esta estructura es perfecta.
       */}
-      <Header />
-      {/*<Hero />
-      <section id="about"> <About /> </section>
-      <section id="projects"> <ProjectsList /> </section>
-      <section id="contact"> <ContactForm /> </section>*/}
+      <Hero />
+      {/*<section id="about"> <About /> </section>
+      <section id="projects"> <ProjectsList /> </section>*/}
+      <section id="contact"> <ContactForm /> </section>
       {/* Puedes agregar un Footer al final */}
-    </main>
+      <footer className="bg-slate-900 text-red-500 py-8 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-slate-400">
+            © 2025 Alexander Gavilanez. Construido con React y Tailwind CSS.
+          </p>
+        </div>
+      </footer>
+    </div>
   );
 }
