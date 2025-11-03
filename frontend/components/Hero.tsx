@@ -8,9 +8,9 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/*Imagen sobre mi */}
         <div className="mb-8">
-          <img 
-            src="/images/profile-alexander.jpg" 
-            alt="Foto de Alexander" 
+          <img
+            src="/images/profile-alexander.jpg"
+            alt="Foto de Alexander"
             className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-blue-600"
           />
         </div>
@@ -25,20 +25,20 @@ export default function Hero() {
 
         {/* Llamada a la Acción (CTA) */}
         <div className="mt-10 flex justify-center space-x-4">
-          <Link 
-            href="#projects" 
+          <Link
+            href="#projects"
             className="px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition duration-150 ease-in-out"
           >
             Ver mis Proyectos
           </Link>
-          <Link 
-            href="#contact" 
+          <Link
+            href="#contact"
             className="px-6 py-3 border border-blue-600 text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition duration-150 ease-in-out"
           >
             Contáctame
           </Link>
         </div>
-        
+
       </div>
     </section>
   );

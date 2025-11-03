@@ -14,9 +14,9 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
         {/* Logo/Nombre */}
         <Link href="/" className="text-xl font-bold text-gray-800 hover:text-blue-600">
-          Alexander Gavilanez Castro 
+          Alexander Gavilanez Castro
         </Link>
-        
+
         {/* Navegación para Escritorio */}
         <nav className="hidden md:flex space-x-8">
           {navItems.map((item) => (
@@ -25,8 +25,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        
-        {/* (Opcional: puedes añadir un botón de menú móvil aquí) */}
+
       </div>
     </header>
   );

@@ -9,7 +9,7 @@ import ContactForm from '../../components/ContactForm';
 
 export default function Home() {
   return (
-    
+
     <div>
       <Header />
       {/* El componente Header suele estar fuera del 'main' o dentro de un 'Layout'
