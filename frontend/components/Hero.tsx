@@ -6,13 +6,21 @@ export default function Hero() {
     // Aseguramos que la sección ocupe toda la pantalla y tenga padding arriba/abajo
     <section id="home" className="pt-24 md:pt-48 pb-12 bg-gray-50 text-center">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+        {/*Imagen sobre mi */}
+        <div className="mb-8">
+          <img 
+            src="/images/profile-alexander.jpg" 
+            alt="Foto de Alexander" 
+            className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-blue-600"
+          />
+        </div>
+
         {/* Título y Presentación */}
         <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl md:text-7xl">
           Hola, soy <span className="text-blue-600">Alexander</span>.
         </h1>
         <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-          Estudiante de programación y **Desarrollador Full-Stack JS** especializado en Next.js y Node.js.
+          Titulado en Desarrollo de Aplicaciones multiplataforma. Apasionado por la tecnología y el aprendizaje continuo.
         </p>
 
         {/* Llamada a la Acción (CTA) */}

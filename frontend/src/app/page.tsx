@@ -19,8 +19,9 @@ export default function Home() {
       {/*<section id="about"> <About /> </section>
       <section id="projects"> <ProjectsList /> </section>*/}
       <section id="contact"> <ContactForm /> </section>
+
       {/* Puedes agregar un Footer al final */}
-      <footer className="bg-slate-900 text-red-500 py-8 px-4">
+      <footer className="bg-slate-900 text-white-500 py-8 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-slate-400">
             © 2025 Alexander Gavilanez. Construido con React y Tailwind CSS.
