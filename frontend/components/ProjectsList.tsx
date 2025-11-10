@@ -35,13 +35,13 @@ export default function ProjectsList() {
     return (
         <div>
             {/* Navegación para Escritorio */}
-        <nav className="hidden md:flex space-x-8">
-          {navItems.map((item) => (
-            <Link key={item.name} href={item.href} className="text-gray-600 hover:text-blue-600 font-medium transition duration-150 ease-in-out">
-              {item.name}
-            </Link>
-          ))}
-        </nav>
+            <nav className="hidden md:flex space-x-8">
+            {navItems.map((item) => (
+                <div className="text-gray-600 hover:text-blue-600 font-medium transition duration-150 ease-in-out">
+                {item.name}
+                </div>
+            ))}
+            </nav>
         </div>
     );
 }
