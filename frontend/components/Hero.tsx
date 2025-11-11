@@ -33,9 +33,16 @@ export default function Hero() {
           </Link>
           <Link
             href="#contact"
-            className="px-6 py-3 border border-blue-600 text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition duration-150 ease-in-out"
+            className="px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition duration-150 ease-in-out"
           >
             Contáctame
+          </Link>
+          <Link
+            href="/docs/Alexander_Gavilanez_Castro_CV.pdf"
+            download="Alexander_Gavilanez_Castro_CV.pdf"
+            className="px-6 py-3 border border-blue-600 text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 transition duration-150 ease-in-out"
+          >
+            Descargar CV
           </Link>
         </div>
 
