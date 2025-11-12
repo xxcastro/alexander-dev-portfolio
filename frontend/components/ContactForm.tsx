@@ -10,7 +10,7 @@ export default function ContactForm() {
           <div>
             <div className="flex items-center space-x-4 my-4 bg-slate-100 p-8 rounded-lg hover:bg-slate-200 transition duration-300 shadow-xl">
               <img className="w-8 h-8" src="/images/icons/linkedin.png" alt="icon-linkedin" />
-              <a className="text-lg text-gray-700 hover:text-gray-900" href="https://www.linkedin.com/in/alexander-gavilanez-castro-037a8927b/">https://www.linkedin.com/in/alexander-gavilanez-castro-037a8927b/</a>
+              <a className="text-lg text-gray-700 hover:text-gray-900" href="https://www.linkedin.com/in/alexander-gavilanez-castro-037a8927b/">Alexander Gavilanez Castro</a>
             </div>
             <div className="flex items-center space-x-4 my-4 bg-slate-100 p-8 rounded-lg hover:bg-slate-200 transition duration-300 shadow-xl">
               <img className="w-8 h-8" src="/images/icons/phone-call.png" alt="icon-phone" />

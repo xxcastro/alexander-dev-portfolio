@@ -6,7 +6,7 @@ export default function ProjectsList() {
             id: 1,
             name: 'Gestor de tareas',
             description: 'Demostracion de CRID , Autenticacion y APIs RESTful robusta.',
-            image: '/images/Captura.png',
+            image: '/images/gestortareas.png',
             stack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
             demoUrl: '#',
             githubUrl: '#',
@@ -16,7 +16,7 @@ export default function ProjectsList() {
             id: 2,
             name: 'Clon de App de Datos externos',
             description: 'Demostracion de consumo de APIs externas, manejo de estados complejo en el frontend,diseño responsivo.',
-            image: '/images/Clon-apps.png',
+            image: '/images/clonapps.png',
             stack: ['React', 'Node.js', 'MongoDB', 'Stripe'],
             demoUrl: '#',
             githubUrl: '#',
@@ -26,7 +26,7 @@ export default function ProjectsList() {
             id: 3,
             name: 'App de votacion/comentarios',
             description: 'Demostracion de relaciones de datos en MONGODB/PostgreSQL,votaciuon ,logica de negocio avanzada.',
-            image: '/images/App-votacion.png',
+            image: '/images/appvotacion.png',  
             stack: ['PostgreSQL','MongoDB'],
             demoUrl: '#',
             githubUrl: '#',
@@ -36,7 +36,7 @@ export default function ProjectsList() {
             id: 4,
             name: 'ChatBot AI',
             description: 'Demostracion de relaciones de datos en MONGODB/PostgreSQL,votaciuon ,logica de negocio avanzada.',
-            image: '/images/Chatbot.png',
+            image: '/images/chatbot.png',
             stack: ['PostgreSQL','MongoDB'],
             demoUrl: '#',
             githubUrl: '#',
@@ -52,30 +52,43 @@ export default function ProjectsList() {
             <div className="container mx-auto p-6">               
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {projectsItems.map((item) => (
-                        <div className="bg-blue-600 rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
-                            <img
-                                src={item.image}
-                                alt={item.name}
-                                className="w-full h-48 object-cover"
-                            />
-                            <div className="p-4">
-                                <div>
-                                    <h2 className="text-xl font-bold text-white">{item.name}</h2>
-                                    <a className="text-white font-mono">{item.description}</a>
+                       // Solo cambia el div de la tarjeta y los botones
+                        <div key={item.id} className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 border-2 border-transparent hover:border-blue-500">
+                            
+                            <img src={item.image} alt={item.name} className="w-full h-48 object-cover" />
+                            
+                            <div className="p-5 flex flex-col justify-between h-auto">
+                                {/* ... (Título, Descripción, SkillTag igual que el Diseño 1) ... */}                                
+                                <h2 className="text-lg font-bold text-gray-900">{item.name}</h2>
+                                <p className="text-xs text-gray-500 mt-1">{item.description}</p>
+                                {/* Stack Tecnológico Horizontal */}
+                                <div className="flex flex-wrap gap-1 mt-2">
+                                    {item.stack.map((tech) => (
+                                        <span key={tech} className="text-xs font-medium px-2 py-0.5 rounded bg-blue-100 text-blue-800">
+                                            {tech}
+                                        </span>
+                                    ))}
                                 </div>
-                                
-                                <div className="flex space-x-4 mt-4">                            
-                                    <Link href={item.demoUrl} className="bg-teal-500 text-white font-mono px-3 py-1 rounded hover:bg-blue-600 transition duration-300 flex items-center space-x-2 m-2" >
-                                        <img className="w-6 h-6 " src="/images/icons/link.png" alt="icon-github" />
-                                         <a className='font-mono'>Ver Demo</a>
+                                {/* Botones */}
+                                <div className="flex flex-col space-y-2 mt-4">
+                                    <Link 
+                                        href={item.demoUrl}
+                                        className="w-full text-center px-4 py-2 text-sm font-medium rounded-md text-white bg-green-500 hover:bg-green-600 transition duration-300"
+                                        target="_blank"
+                                    >
+                                        <img className='h-5 w-5 inline-block mr-2' src="images/icons/link.png" alt="icon-demo" />
+                                        Ver Demo
                                     </Link>
-                                    <Link href={item.githubUrl} className="bg-indigo-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition duration-300 flex items-center space-x-2 m-2">
-                                        <img className="w-8 h-8 " src="/images/icons/github-sign.png" alt="icon-github" />
-                                         <a className='font-mono'>Github</a>
+                                    <Link 
+                                        href={item.githubUrl}
+                                        className="w-full text-center px-4 py-2 text-sm font-medium rounded-md text-gray-600 border border-gray-300 hover:bg-gray-50 transition duration-300"
+                                        target="_blank"
+                                    >
+                                        <img className='h-6 w-6 inline-block mr-2' src="images/icons/github.png" alt="icon-github" />
+                                        Código Fuente
                                     </Link>
                                 </div>
                             </div>
-
                         </div>
                     ))}
                 </div>
