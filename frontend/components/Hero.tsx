@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     // Aseguramos que la sección ocupe toda la pantalla y tenga padding arriba/abajo
-    <section id="home" className="min-h-screen pt-16 pb-12 bg-gray-50 text-center">
+    <section id="home" className="min-h-screen pt-16 pb-12 bg-gray-100 text-center">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center" style={{ minHeight: 'calc(100vh - 4rem)' }}>
         {/* Imagen optimizada */}
         <div className="mb-8">

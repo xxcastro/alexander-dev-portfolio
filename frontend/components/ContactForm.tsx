@@ -1,7 +1,6 @@
 // frontend/components/ContactForm.tsx
 
-// IMPORTANTE: Definir el endpoint de Formspree fuera del componente.
-// Si deseas mover el endpoint a un archivo .env, avísame.
+
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/myzbpbnk"; 
 
 export default function ContactForm() {

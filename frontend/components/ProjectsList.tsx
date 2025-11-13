@@ -25,7 +25,7 @@ export default function ProjectsList() {
             stack: ['React', 'Node.js', 'MongoDB', 'JWT'], // JWT en lugar de Stripe
             demoUrl: '#',
             githubUrl: '#',
-            status: 'In progress',
+            status: 'En progreso',
         },
         {
             id: 2,
@@ -35,7 +35,7 @@ export default function ProjectsList() {
             stack: ['Next.js', 'TypeScript', 'API REST'],
             demoUrl: '#',
             githubUrl: '#',
-            status: 'In progress',
+            status: 'Próximamente',
         },
         {
             id: 3,
@@ -45,7 +45,7 @@ export default function ProjectsList() {
             stack: ['PostgreSQL', 'MongoDB', 'Express'],
             demoUrl: '#',
             githubUrl: '#',
-            status: 'In progress',
+            status: 'Próximamente',
         },
         {
             id: 4,
@@ -55,12 +55,12 @@ export default function ProjectsList() {
             stack: ['Python', 'Node.js', 'LLM API'],
             demoUrl: '#',
             githubUrl: '#',
-            status: 'In progress',
+            status: 'Próximamente',
         }
     ];
 
     return (
-        <section id="projects" className="py-20 bg-gray-50">
+        <section id="projects" className="py-20 bg-gray-100">
             {/* Título: Usamos text-center y max-w */}
             <div className="max-w-7xl mx-auto px-4 text-center mb-12">
                 <h1 className="text-4xl font-extrabold text-blue-600">PROYECTOS</h1>
@@ -71,13 +71,25 @@ export default function ProjectsList() {
                     {projectsItems.map((item) => (
                         <div key={item.id} className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 border-2 border-transparent hover:border-blue-500 hover:shadow-2xl">
                             
-                            {/* IMAGEN OPTIMIZADA */}
+                            {/* Contenedor de Imagen y Status (DEBE ser relative) */}
                             <div className="w-full h-48 relative">
+                                {/* BADGE DE STATUS */}
+                                {item.status && (
+                                    <span className={`absolute top-0 right-0 mt-3 mr-3 px-3 py-1 text-xs font-bold uppercase rounded-full shadow-md z-10
+                                        ${item.status === 'Completado' ? 'bg-green-500 text-white' 
+                                            : item.status == 'En progreso' ? 'bg-yellow-300 text-gray-800'
+                                                : 'bg-blue-500 text-white'
+                                            }`}>
+                                        
+                                        {item.status}
+                                    </span>
+                                )}
+                                
                                 <Image 
                                     src={item.image} 
                                     alt={item.name} 
-                                    fill // Ocupa todo el contenedor
-                                    sizes="(max-width: 640px) 100vw, 33vw" // Mejora la optimización
+                                    fill 
+                                    sizes="(max-width: 640px) 100vw, 33vw" 
                                     className="object-cover" 
                                 />
                             </div>

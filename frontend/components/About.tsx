@@ -47,14 +47,12 @@ export default function About() {
                 
                 <p className="mt-4 text-gray-600 leading-relaxed text-lg">
                     Poseo una sólida formación en Desarrollo de Aplicaciones Multiplataforma (DAM), lo que me proporciona una comprensión completa del ciclo de vida del software, desde la base de datos hasta la interfaz.
-                </p>            
-
+                </p> 
                 
                 <p className="mt-6 text-gray-700 leading-relaxed font-semibold p-4 border-l-4 border-blue-600 bg-blue-50">
                     Me he centrado en el desarrollo con Next.js y TypeScript para garantizar el rendimiento y la escalabilidad. Además, amplío mis conocimientos en Inteligencia Artificial y Big Data (Python, Neo4j), lo que me permitirá integrar soluciones inteligentes en mis proyectos.
                 </p>
-                
-                
+                                
                 <p className="mt-6 text-gray-600 leading-relaxed text-lg">
                     Aunque estoy en búsqueda de mi primera experiencia profesional, mi principal fortaleza es mi capacidad de adaptación y mi compromiso con el aprendizaje continuo. No sé cuál es mi mejor stack, pero sé que puedo superar y dominar cualquier reto que me presenten.
                 </p>
@@ -68,7 +66,7 @@ export default function About() {
                         <h3 className="text-3xl font-bold text-gray-800 mt-12 mb-6">
                             Mis Estudios Académicos
                         </h3>
-                        {/* Aquí puedes mapear o listar tus estudios de forma limpia */}
+
                         <p className="mt-4 text-gray-700 leading-relaxed font-semibold p-3 border-l-4 border-sky-600 bg-sky-50 mb-3">
                             Grado Medio en Instalaciones de Telecomunicaciones - Salesianos los boscos - 2022
                         </p>
@@ -81,9 +79,16 @@ export default function About() {
                         <p className="mt-4 text-gray-700 leading-relaxed font-semibold p-3 border-l-4 border-yellow-600 bg-yellow-50 mb-3">
                             Curso Especialización en IA y Big Data - IES Comercio - Actualidad
                         </p>
+                        {/* ESTUDIOS ACADÉMICOS */}
+                        <h3 className="text-3xl font-bold text-gray-800 mt-12 mb-6">
+                            Cursos y/o Certificaciones 
+                        </h3>
+                        <p className="mt-4 text-gray-700 leading-relaxed font-semibold p-3 border-l-4 border-red-600 bg-red-50 mb-3">
+                            Fundamentos de Power BI - Santander Open Academy - Actualidad
+                        </p>                        
                     </div>
                     {/* COLUMNA 2: ESTUDIOS Y STACK */}
-                    <div className="md:w-1/2">                                                
+                    <div className="md:w-1/2 ">                                                
                         {/* STACK TECNOLÓGICO */}
                         <h3 className="text-3xl font-bold text-gray-800 mt-12 mb-6">
                             Mi Stack Tecnológico
