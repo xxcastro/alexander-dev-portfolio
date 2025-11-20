@@ -1,26 +1,21 @@
-// frontend/components/Hero.tsx
 import Link from 'next/link';
-// Importamos el componente Image de Next.js para optimizar la carga
 import Image from 'next/image';
 
 export default function Hero() {
   return (
-    // Aseguramos que la sección ocupe toda la pantalla y tenga padding arriba/abajo
     <section id="home" className="min-h-screen pt-16 pb-12 bg-gray-100 text-center">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center" style={{ minHeight: 'calc(100vh - 4rem)' }}>
-        {/* Imagen optimizada */}
         <div className="mb-8">
           <Image
             src="/images/profilealexander.jpg"
             alt="Foto de perfil de Alexander"
-            width={192} // 48 * 4 = 192px
-            height={192} // 48 * 4 = 192px
-            priority // Carga esta imagen de inmediato (es el LCP)
+            width={192} 
+            height={192} 
+            priority
             className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-blue-600 shadow-xl"
           />
         </div>
 
-        {/* Título y Presentación */}
         <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl md:text-7xl">
           Hola, soy <span className="text-blue-600">Alexander</span>.
         </h1>
@@ -28,7 +23,6 @@ export default function Hero() {
             Desarrollador Full Stack en busca de mi primera oportunidad profesional para aplicar mis habilidades y crecer en el mundo del desarrollo de software. Apasionado por la tecnología, la resolución de problemas y el aprendizaje continuo.            
           </p>
 
-        {/* Llamada a la Acción (CTA) */}
         <div className="mt-10 flex justify-center space-x-4">
           <Link
             href="#projects"

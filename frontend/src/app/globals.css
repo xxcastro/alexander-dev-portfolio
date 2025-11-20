@@ -1,8 +1,7 @@
-/* Intenta la sintaxis clásica */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* O si la clásica falla por la v4, prueba esta */
+/* Si la clásica falla por la v4, Probar esta */
 /* @import "tailwindcss/preflight";
 @tailwind utilities; */

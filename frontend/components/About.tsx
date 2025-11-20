@@ -1,5 +1,5 @@
 import Image from 'next/image'; 
-// 1. DEFINICIÓN DE INTERFAZ
+
 interface SkillCardProps {
     name: string;
     tag: string;
@@ -37,7 +37,6 @@ export default function About() {
         <section id="about" className="py-20 bg-white">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                {/* TÍTULO PRINCIPAL */}
                 <h2 className="text-4xl font-extrabold text-blue-600 text-center mb-5">
                     SOBRE MÍ
                 </h2>
@@ -60,9 +59,7 @@ export default function About() {
                     Busco una empresa que valore la proactividad y me brinde la oportunidad de aplicar mis habilidades en un entorno de producción.
                 </p>
                 <div className="flex flex-col md:flex-row gap-12">
-                    {/* COLUMNA 1: ENFOQUE Y EXPERIENCIA */}
                     <div className="md:w-1/2">                        
-                        {/* ESTUDIOS ACADÉMICOS */}
                         <h3 className="text-3xl font-bold text-gray-800 mt-12 mb-6">
                             Mis Estudios Académicos
                         </h3>
@@ -79,7 +76,6 @@ export default function About() {
                         <p className="mt-4 text-gray-700 leading-relaxed font-semibold p-3 border-l-4 border-yellow-600 bg-yellow-50 mb-3">
                             Curso Especialización en IA y Big Data - IES Comercio - Actualidad
                         </p>
-                        {/* ESTUDIOS ACADÉMICOS */}
                         <h3 className="text-3xl font-bold text-gray-800 mt-12 mb-6">
                             Cursos y/o Certificaciones 
                         </h3>
@@ -87,13 +83,10 @@ export default function About() {
                             Fundamentos de Power BI - Santander Open Academy - Actualidad
                         </p>                        
                     </div>
-                    {/* COLUMNA 2: ESTUDIOS Y STACK */}
                     <div className="md:w-1/2 ">                                                
-                        {/* STACK TECNOLÓGICO */}
                         <h3 className="text-3xl font-bold text-gray-800 mt-12 mb-6">
                             Mi Stack Tecnológico
                         </h3>
-                        {/* Usamos el array para mapear las tarjetas */}
                         <div className="flex flex-wrap justify-center">
                             {skillsData.map((skill) => (
                                 <SkillCard key={skill.name} {...skill} />
