@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center items-center" style={{ minHeight: 'calc(100vh - 4rem)' }}>
         <div className="mb-8">
           <Image
-            src="/images/profilealexander.jpg"
+            src="/images/photoprofile.jpg"
             alt="Foto de perfil de Alexander"
             width={192} 
             height={192} 
