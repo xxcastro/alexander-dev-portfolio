@@ -80,7 +80,7 @@ export default function About() {
                             Cursos y/o Certificaciones 
                         </h3>
                         <p className="mt-4 text-gray-700 leading-relaxed font-semibold p-3 border-l-4 border-red-600 bg-red-50 mb-3">
-                            Fundamentos de Power BI - Santander Open Academy - Actualidad
+                            Fundamentos de Power BI - Santander Open Academy - 2025
                         </p>                        
                     </div>
                     <div className="md:w-1/2 ">                                                
