@@ -53,6 +53,16 @@ export default function ProjectsList() {
             demoUrl: '#',
             githubUrl: '#',
             status: 'Próximamente',
+        },
+        {
+            id: 5,
+            name: 'One Piece Character Generator',
+            description: 'Genera tu personaje único en el universo de One Piece con Inteligencia Artificial.',
+            image: '/images/onepiecegenerator.png',
+            stack: ['Next.js', 'TypeScript', 'Tailwind CSS 4', 'Groq API (LLaMA 3.3 70B)','Hugging Face (FLUX.1-schnell)'], 
+            demoUrl: 'https://one-piece-generator.vercel.app/',
+            githubUrl: 'https://github.com/xxcastro/one-piece-generator',
+            status: 'Completado',
         }
     ];
 

@@ -81,7 +81,13 @@ export default function About() {
                         </h3>
                         <p className="mt-4 text-gray-700 leading-relaxed font-semibold p-3 border-l-4 border-red-600 bg-red-50 mb-3">
                             Fundamentos de Power BI - Santander Open Academy - 2025
-                        </p>                        
+                        </p>    
+                        <p className="mt-4 text-gray-700 leading-relaxed font-semibold p-3 border-l-4 border-teal-500 bg-teal-50 mb-3">
+                            AWS Academy Graduate - Generative AI Foundations - 2026
+                        </p>
+                        <p className="mt-4 text-gray-700 leading-relaxed font-semibold p-3 border-l-4 border-blue-800 bg-blue-50 mb-3">
+                            AWS Academy Graduate - Cloud Foundations - 2026
+                        </p>                    
                     </div>
                     <div className="md:w-1/2 ">                                                
                         <h3 className="text-3xl font-bold text-gray-800 mt-12 mb-6">
